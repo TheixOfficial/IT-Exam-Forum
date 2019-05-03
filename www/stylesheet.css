@@ -1,0 +1,28 @@
+/*:root {
+
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font: Arial;
+    background-color: #b6bcbd;
+}
+
+.loginContainer {
+    text-align: center;
+    padding: 20% 42% 0% 42%;
+    margin: 0;
+}
+
+.loginHeader {
+    background-color: #479aaf;
+    border-radius: 5px;
+}
+
+.loginContent {
+    background-color: #cacaca;
+    border-radius: 5px;
+    padding: 5% 0 2% 0;
+    margin: -5% 0 0 0;
+}
