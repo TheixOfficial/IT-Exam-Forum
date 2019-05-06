@@ -3,9 +3,9 @@
 }*/
 
 body {
+    font-family: arial black;
     margin: 0;
     padding: 0;
-    font: Arial;
     background-color: #b6bcbd;
 }
 
@@ -25,4 +25,91 @@ body {
     border-radius: 5px;
     padding: 5% 0 2% 0;
     margin: -5% 0 0 0;
+}
+
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #991515;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav li a {
+    color: white;
+    padding: 0 0.5rem 0 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 125%;
+}
+
+.nav p {
+    color: white;
+    padding: 0 0.5rem 0 0;
+    font-size: 125%;
+}
+
+.nav button {
+    border: 2px solid #630a0a;
+    border-radius: 2px;
+    background-color: #991515;
+    margin-left: 55%;
+}
+
+.nav button:hover{
+    background-color: #630a0a;
+    color: white;
+    border: 2px solid #630a0a;
+    border-radius: 2px;
+    margin-left: 55%;
+}
+
+.right-elements {
+    display: inline;
+    padding: 0 2% 0 0;
+    font-size: 125%;
+    font-family: arial black;
+}
+
+.logo {
+    display: inline;
+    float: left;
+}
+
+.logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.info {
+    margin: 0 33%  33%;
+    padding-bottom: 1%;
+    background-color: #991515;
+    text-align: center;
+    color: white;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h1{
+    margin: 0;
+    padding: 0;
+}
+
+.profile-info p {
+    margin: 0;
+    margin: 0 40% 0 40%;
+    background-color: #991515;
 }

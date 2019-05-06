@@ -22,14 +22,22 @@
 				<h2>Login</h2>
 			</div>
 			<div class="loginContent">
-				<form action="loginUser.php" method="POST">
+			<?php
+				if (isset($_GET['error'])) {
+                    if ($_GET['error'] == "emptyfields") {
+                        echo '<p>Fill in all fields</p>';
+					}
+					else if ($_GET['error'] == "invalidinput") {
+                        echo '<p>Incorrect username or password</p>';
+					}
+				}
+			?>
+				<form action="includes/login.inc.php" method="post">
                     <div>
-                        <input type="text" name="username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username/email">
+                        <input type="text" name="username" placeholder="Username/Email">
+                        <input type="password" name="pwd" placeholder="Password">
                     </div>
-                    <div>
-                        <input type="password" name="pwd" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <button type="submit">Login</button>
+                    <button type="submit" name="login-submit">Login</button>
                 </form>
                 <p>Don't have an account yet? <a href="register.php">Register</a></p>
 			</div>

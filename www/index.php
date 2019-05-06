@@ -1,19 +1,16 @@
-<?php 
-	session_start();
-
-	if (!isset($_SESSION['id'])) {
-		ob_start();
-		header('Location: login.php');
-		ob_end_flush();
-		die();
-	}
+<?php
+require 'header.php'
 ?>
 
-<html>
-	<head>
-		<title>Anarchy Forum</title>
-	</head>
-	<body>
-		<p>test</p>
-	</body>
-</html
+<div class="main">
+	<div class="info">
+		<h1>Anarchy Forum</h1>
+		<h2>What is Anarchy Forum?</h2>
+		<p>Anarchy Forum is a forum for everyone, and there are no rules!</p>
+		<p>You can use the forum in any way you like, and talk about any topic.</p>
+	</div>
+</div>
+
+<?php
+require 'footer.php'
+?>
